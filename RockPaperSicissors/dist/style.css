@@ -1,0 +1,105 @@
+.sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header {
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+}
+
+.button {
+  position: absolute;
+  left: 1rem;
+  margin-top: 35px;
+  transform: translateY(-50%);
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.button:hover {
+  transform: translateY(-50%) scale(1.01);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+}
+.button:active {
+  transform: translateY(-50%) scale(1.01);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: bisque;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #333333;
+}
+
+.choices {
+  margin-bottom: 30px;
+}
+
+.choices button {
+  font-size: 7.5rem;
+  min-width: 160px;
+  margin: 0 10px;
+  border-radius: 250px;
+  background-color: #00aaff;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.choices button:hover {
+  background-color: #66ccff;
+}
+
+#playerDisplay, #computerDisplay {
+  font-size: 2.5rem;
+}
+
+#resultDisplay {
+  font-size: 5rem;
+  margin: 30px 0;
+}
+
+.scoreDisplay {
+  font-size: 2rem;
+}
+
+.greenText, #playerScoreDisplay {
+  color: #27ec48;
+}
+
+.redText, #computerScoreDisplay {
+  color: #ef4343;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100%;
+  padding: 20px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissors</title>
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="/Homepage.html/dist/composition.css">
+</head>
+<body>
+    <div class="background">
+        <header class="sort">The Hub</header>
+        <button class="button"><a href="/Homepage.html/Main.html">Home</a></button>
+        <div id="clock" class="clock"></div>
+    </div>
+
+
+    <h1>Rock - Paper - Scissors</h1>
+    
+    <div class="choices">
+        <button onclick="playGame('rock')">🪨</button>
+        <button onclick="playGame('paper')">📃</button>
+        <button onclick="playGame('scissors')">✂️</button>
+    </div>
+
+    <div id="playerDisplay">PLAYER: </div>
+    <div id="computerDisplay">COMPUTER: </div>
+    <div id="resultDisplay"></div>
+
+    <div class="scoreDisplay">Player Score: 
+        <span id="playerScoreDisplay">0</span>
+    </div>
+
+    <div class="scoreDisplay">Computer Score: 
+        <span id="computerScoreDisplay">0</span>
+    </div>
+
+    <script src="dist/app.js"></script>
+    <script src="/Homepage.html/dist/clock.js"></script>
+</body>
+</html>
